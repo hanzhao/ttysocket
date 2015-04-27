@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "coffee-script": "^1.9.2"
+  },
+  "dependencies": {
+    "serialport": "^1.6.3"
   }
 }
