@@ -12,9 +12,15 @@
 
   ref = require('./utils'), info = ref.info, event = ref.event;
 
+
+  /* Help info */
+
   help = function() {
     return console.log("usage: ttysocket [--help] --host SERVER_ADDR --port SERVER_PORT TTY_ADDR\n\noptional arguments:\n  --help                    show this help message and exit\n  --host SERVER_ADDR        server address\n  --port SERVER_PORT        server port");
   };
+
+
+  /* Parse command line */
 
   if (process.argv.length < 3) {
     return help();
