@@ -39,7 +39,12 @@
 
   /* SerialPort Readline Loop */
 
-  sp = process.stdin;
+  sp = new SerialPort(tty, {
+    parser: serialport.parsers.readline("\n")
+  });
+
+
+  /* Use stdin */
 
 
   /* Socket Connection */

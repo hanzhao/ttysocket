@@ -24,9 +24,10 @@ tty = args._[0]
 return help() unless tty?
 
 ### SerialPort Readline Loop ###
-#sp = new SerialPort tty,
-#  parser: serialport.parsers.readline "\n"
-sp = process.stdin
+sp = new SerialPort tty,
+  parser: serialport.parsers.readline "\n"
+### Use stdin ###
+# sp = process.stdin
 
 ### Socket Connection ###
 client = net.createConnection port, host, ->
