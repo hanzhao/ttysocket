@@ -27,7 +27,7 @@ return help() unless tty?
 sp = new SerialPort tty,
   parser: serialport.parsers.readline "\n"
 ### Use stdin ###
-# sp = process.stdin
+### sp = process.stdin ###
 
 ### Socket Connection ###
 client = net.createConnection port, host, ->
