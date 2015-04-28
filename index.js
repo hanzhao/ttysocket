@@ -47,6 +47,9 @@
   /* Use stdin */
 
 
+  /* sp = process.stdin */
+
+
   /* Socket Connection */
 
   client = net.createConnection(port, host, function() {
