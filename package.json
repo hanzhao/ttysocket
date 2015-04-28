@@ -12,6 +12,8 @@
     "coffee-script": "^1.9.2"
   },
   "dependencies": {
+    "colors": "^1.0.3",
+    "minimist": "^1.1.1",
     "serialport": "^1.6.3"
   }
 }
